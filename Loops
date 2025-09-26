@@ -1,17 +1,45 @@
 #include <iostream> 
 using namespace std;
 
-int main(){
+int main()
+{
 
-  cout<<hello
+//Uses a while loop to print out numbers 1-10 
+  int num=1;
+  while(num<=10)
+  {
+    cout<<num;
+    num+=1;
+    cin>>num;
+    cout<<num;
+  } 
 
+//uses a do while loop to keep asking for password til user types UNT2025
+  string password;
+  string UNT2025 = "UNT2025"; //Give variable the password name 
+  do
+  {
+    cout<<"What is the password? ";
+    cin>> password;
+      if(password != UNT2025)
+      {
+        cout<<"Incorrect password, try again ._. "<<endl;
+      }
+      else
+      {
+          cout<<"Correct password :) "<<endl;
+      }
+      
+  }while(password != UNT2025); // keeps loop alive
+    cout<<endl;
 
-
-
-
-
-
-
+//uses a for loop to sum number 1-100
+  int sum = 0
+  for(int i=1; sum <=100; i++)
+  {
+    sum += i;
+  }
+  cout<<"The sum is: "<<sum<<endl;
 
   return 0;
 }
