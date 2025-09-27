@@ -1,0 +1,34 @@
+#include <iostream>
+#include <stdio> // for c style
+#include <ctime> // for rand numb
+#include <cstdlib> //for rand numb
+using namespace std;
+
+int main()
+{
+// Take a test score as input and print "A", "B", "C", "D", or "F" using if/else if.
+
+  int score;
+  cout<<"What did you make on the test? ";
+  cin>>score;
+    
+  if (score >= 90)
+  {
+    cout<<"You made an A"<<endl;
+  }
+  else if (score >= 80)
+  {
+    cout<<"You made a B"<<endl;
+  }
+  else if (score >= 70)
+  {
+    cout<<"You made a C"<<endl;
+  }
+  else
+  {
+    cout<< "You failed"<<endl;
+  }
+
+
+  return 0;
+}
