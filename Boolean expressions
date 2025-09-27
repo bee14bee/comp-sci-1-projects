@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+// Ask the user for an integer. Print "Even" if divisible by 2, "Odd" otherwise.
+  int num;
+  cout<< "Enter number";
+  cin>> num;
+
+  if(num % 2)
+  {
+    cout<< "odd" >> endl;
+  }
+  else
+  {
+    cout<< "even" >> endl;
+  }
+
+
+
+
+  return 0;
+}
