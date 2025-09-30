@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+  int num1
+  int num2
+  int sum;
+  int multip;
+  int quote;
+
+  cout<<"Give a number ";
+  cin>> num1
+  cout<<"Give a number ";
+  cin>> num2
+
+  sum = num1 + num2;
+  cout<<"The sum of the numbers are "<<sum<<endl;
+
+  multip = num1 * num2;
+  cout<<"The product of the numbers are "<<multip<<endl;
+
+  quote = num1/num2;
+  cout<<"The quotient of the numbers are "<<quote<<endl;
+
+  if (num1 > num2)
+  {
+    cout<<"Greater than"<<endl;
+  }
+  else if( num1 < num2)
+  {
+    cout<<"less than"<<endl;
+  }
+  else
+  {
+    cout<<"equal too"<<endl;
+  }
+
+
+
+return 0;
+}
