@@ -1,0 +1,22 @@
+#include <iostream>
+#unclude <iomanip>
+using namespace std;
+
+int main ()
+{
+
+    double bill;
+    double paid;
+    double change;
+  cout<<fixed<<setprecision(2);
+  cout<< "total bill: ";
+  cin>>bill;
+
+  cout<<"amount paid: "<<endl;
+  cin>>paid;
+
+  change = paid - bill;
+  cout<<"Change: "<<change<<endl;
+
+  return 0;
+}
