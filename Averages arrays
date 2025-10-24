@@ -1,0 +1,34 @@
+/*
+Will ask user to input 5 numbers and displays there averages
+*/ 
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+  int const SIZE= 5; // needs data type 
+  int arr[SIZE]; //declare array 
+
+  //input for array
+  for (int i = 0; i<SIZE; i++)
+  {
+    cout<<"Enter number: ";
+    cin>>arr[i];
+  }
+
+  int sum = 0; // new variable
+  int avg; //new variable gotta delcare 
+  
+  //computes averages of numbers
+  for (int i = 0;i < SIZE;i++)
+  {
+    sum+=arr[i];
+  }
+
+    avg=sum/SIZE; //finds sum  
+  cout<<"Average: "<<avg<<endl; //displays averages
+
+
+  return 0;
+}
