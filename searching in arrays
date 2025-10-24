@@ -1,0 +1,35 @@
+/*
+Write a program to search for a student ID in an array and return its index.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	const int SIZE = 5; // how big array is 
+	int ID[SIZE]= {112234,225511,663212,874211,332122}; //numbers in array
+	int target;
+	bool found = false;
+
+	cout<<"Enter number searched: ";
+	cin>>target;
+
+    //searches array to see if input is found
+	for(int i=0; i<SIZE;i++)
+	{
+		if(ID[i]== target)
+		{
+			cout<<"Found "<<target<<" @"<<i<<endl;
+			found = true;
+			break;
+		}
+	}
+	
+	//displays if number isnt found in array
+	if (!found)
+	{
+	    cout<<"Number not found"<<endl;
+	}
+	return 0;
+}
