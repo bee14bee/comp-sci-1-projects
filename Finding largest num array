@@ -1,0 +1,43 @@
+/*
+Find and print the largest number in an array
+*/
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+  int const SIZE= 5; // needs data type 
+  int arr[SIZE]; //declare array 
+
+  //input for array
+  for (int i = 0; i<SIZE; i++)
+  {
+    cout<<"Enter number: ";
+    cin>>arr[i];
+  }
+
+	int MaxVal = arr[0]; //variable to find max val
+
+  //finds the largest number in array 
+  for (int i = 0;i < SIZE;i++)
+  {
+    if(arr[i] > MaxVal)
+		{
+			MaxVal= arr[i];
+		}
+  }
+
+	//displays array 
+	for (int i = 0; i<SIZE; i++)
+  {
+		cout<<arr[i]<<" ";
+  }
+
+    cout<<endl;
+
+	//displays largest number
+	cout<<"Largest number: "<<MaxVal<<endl;
+
+  return 0;
+}
