@@ -1,0 +1,85 @@
+/*
+displays random number for an array from 0 - 99
+- computes the average of them 
+- displays the largest one 
+- displays the smallest one
+*/
+
+#include <iostream>
+#include <cstdlib> // for random num genorator 
+#include <ctime>
+using namespace std;
+
+int main()
+{
+	#include <iostream>
+#include <cstdlib> // for random num genorator 
+#include <ctime>
+using namespace std;
+
+int main()
+{
+	const int SIZE = 5;
+	int arr[SIZE]; //makes array size 5
+	srand(time(0)); // seeding random number 
+    
+    //input for array
+	for (int i = 0; i<SIZE; i++)
+	{
+		arr[i]=rand()% 100;
+	}
+	
+    //displays array
+	for (int i = 0; i<SIZE; i++)
+	{
+		cout<<arr[i]<<" ";
+	}
+	
+	cout<<endl; //new line for avg
+	
+	//computes averages of random numbers
+	int sum = 0;
+	int avg;
+
+	for (int i = 0; i<SIZE; i++)
+	{
+		sum+=arr[i];
+	}
+
+	avg = sum/SIZE;
+	cout<<"AVG: "<<avg<<endl;
+	
+	cout<<endl; //new line for largest num
+	
+	int Max_v = arr[0]; //variable to find max val 
+	int Min_v= arr[0]; //variable to find min val
+	
+	//displays largest number in array
+	for(int i =0; i<SIZE; i++)
+	{
+	    if(arr[i]>Max_v)
+	    {
+	        Max_v = arr[i];
+	    }
+	}
+	
+	cout<<"Largest number: "<<Max_v<<endl;
+	
+	cout<<endl; //new line for smallest num
+	
+	//displays smallest number in array
+	for(int i =0; i<SIZE; i++)
+	{
+	    if(arr[i]<Min_v)
+	    {
+	        Min_v = arr[i];
+	    }
+	}
+	
+	cout<<"Smallest number: "<<Min_v<<endl;
+	
+	cout<<endl;
+	
+
+    return 0;
+}
