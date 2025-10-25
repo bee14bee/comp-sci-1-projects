@@ -1,0 +1,47 @@
+/*
+1. Make a function void printLine() that prints 30 dashes.
+2. Make a function void printGreeting(string name) that prints “Hello, [name]!”.
+*/
+
+#include <iostream>
+using namespace std;
+
+// 1.)
+void printLine()
+{
+	cout<<"--------------------------"<<endl;
+}
+
+/*
+	When using void if a function should read input, 
+	either take no parameter or take a reference parameter (string&).
+*/
+
+//2A.) Function with Parameters
+void printGreeting1(const string& name)
+{
+	cout<<"Hello "<< name<<endl;
+}
+
+//2B.) Function without parameters
+void printGreeting2()
+{
+	string name;
+	cout<<"What is your name ";
+	cin>>name;
+	cout<<"Hello "<< name<<endl;
+}
+
+int main()
+{
+    
+    string name;
+    cout << "What is your name? ";
+    cin >> name;
+    
+	printLine();
+    printGreeting1(name);
+	printGreeting2();
+
+	return 0;
+}
