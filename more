@@ -1,0 +1,26 @@
+2. Sum Printer Function (no arrays)
+
+Write a program that:
+
+Has a function void printSum(int a, int b) that prints the sum (does not return it).
+
+In main(), read two integers from the user and call the function.
+
+Focus: See how void can output directly without returning a value.
+
+void printsum(int a,int b)
+{
+  cout<<a+b;
+}
+
+couting in array:
+
+int count = 0;
+for (int i = 0; i < SIZE; i++)
+    if (arr[i] % 2 == 0)
+        count++;
+cout << "Even numbers: " << count;
+
+Reversing (print backwards)
+for (int i = SIZE - 1; i >= 0; i--)
+    cout << arr[i] << " ";
