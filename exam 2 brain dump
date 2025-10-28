@@ -1,5 +1,15 @@
 brain dump exam 2 
 
+Random numbs to rememeber: 
+- first number gives you range second number gives you your starting point
+rand()%(Max-min+1)min 
+
+ex:range from 30-78
+max=78 min=30
+(78-30+1)+30
+(48+1)+30
+49+30 -> rand()%48+30
+
 Chapter 5: Arrays
 
 1D array syntax:
