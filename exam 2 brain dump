@@ -1,0 +1,125 @@
+brain dump exam 2 
+
+Chapter 5: Arrays
+
+1D array syntax:
+
+//makes array size how big you can in this case 5 and MAKE SURE ITS CONST.
+int const SIZE = 5;
+//declaring this variable
+int arr[i];
+
+//input
+for( int i=0; i<SIZE;i++)
+{
+  cout<<"enter number: ";
+  cin>>arr[i];
+}
+
+//displaying and dont forget to add " " at end.
+for( int i=0; i<SIZE;i++)
+{
+  cout<<arr[i]<<" ";
+}
+cout endl;
+
+
+2D arrays syntax:
+
+int const ROWS = 2;
+int const COLS = 5;
+//put numbers the rows and cols are assign too 
+int arr[2][5];
+
+//input
+for(int r = 0; r < ROWS; r++)
+{
+  for (int c = 0; c < COLS; c++)
+  {
+    cout>>"Enter number for Rows: "<<r<< " Enter number for Cols: "<<c<<endl;
+    cin>>arr[r][c]
+  }
+}
+
+//displaying
+for(int r = 0; r < ROWS; r++)
+{
+  for (int c = 0; c < COLS; c++)
+  {
+    
+    cout<<arr[r][c]<<" ";
+  }
+  cout<<endl //dont forget
+}
+
+C-string: make sure #include <c-string> in header 
+
+strcpy: copys a string to another variable (will need a third variable as buffer) 
+- ie. strcpy(variable1,variable2) then cout it as first variable them cout<"fhs"<<variable1<<endl;
+
+strcat: compines words to make sentences
+- (not cout needed just to strcat(variable,variable))  
+
+strlen- will give the length of the sentence 
+- (Use .getline with this meie. cin.getline(city,50) city is variable name is 50 is the bin)
+
+strcmp- will compare sentences based on alpahbetecally 
+- if it equals 0 they are the same <0 it comes first else the other one comes first (must be in done is if else)
+
+//remember i for int
+atoi- turns character into int value (make new variable and assign it using = atoi(variable name);)
+
+//remember f for float/double
+atof- turn character into double value (make new variable and assign it using = afoi(variable name);)
+
+
+Chapter 6: Functions
+
+Two types of functions
+
+Voids and data type 
+
+Voids: Used when you want to display something 
+
+syntax: void printWord()                                                                                              
+        {
+        cout<<"Hello world";
+        }
+
+        in main()
+        printWord();
+
+Variable type: 
+
+Int arraySum(int a, int b)
+{
+  return a + b
+}
+
+in main ()
+
+int x,y;
+
+cout<<"Enter 2 numbers;
+cin>>a>>b;
+
+int result=arraySum(x,y)
+cout>>"Result: "<<result;
+
+For functions should only do inputs and outputs in main unless thats function specific duty.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
